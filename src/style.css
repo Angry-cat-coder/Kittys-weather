@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: vide;
+  background: url(IMG-2310.jpg);
+  background-size: cover;
 }
 
 footer {
@@ -24,14 +25,16 @@ ul {
   padding: 0;
   list-style: none;
 }
-.wrap {
+.content {
   max-width: 600px;
   margin: 30px auto;
 }
-.weather-app {
-  padding: 20px;
+.weather-app,
+.forecast {
+  padding: 25px;
   border: 1px solid lightgrey;
   border-radius: 5px;
+  background: lightgray;
 }
 
 h1 {
@@ -42,8 +45,8 @@ h1 {
   margin-bottom: 0;
   margin-top: 10px;
 }
-a {
-  text-decoration: none;
+.units {
+  color: rgb(135, 135, 135);
 }
 .location {
   margin-bottom: 20px;
@@ -65,7 +68,18 @@ a {
   line-height: 1;
   font-weight: 400;
 }
-.active {
-  color: #000;
-  cursor: default;
+
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.forecast-temp {
+  font-size: 13px;
+}
+.temp-low {
+  opacity: 0.6;
 }

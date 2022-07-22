@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather app</title>
+    <title>Weather mobile app</title>
 
     <!-- CSS only -->
     <link
@@ -18,11 +18,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="wrap">
+      <div class="content">
         <div class="weather-app">
           <form class="search-form" id="search-form">
             <div class="row">
-              <div class="col-6">
+              <div class="col-8">
                 <input
                   type="search"
                   id="city"
@@ -39,15 +39,7 @@
                   class="btn btn-primary w-100 buTTon"
                 />
               </div>
-              <div class="col">
-                <input
-                  type="submit"
-                  id="geo"
-                  value="Geolocation"
-                  class="btn btn-secondary"
-                />
-              </div>
-            </div>
+             </div>
           </form>
 
           <h1 id="mainCity"></h1>
@@ -60,21 +52,15 @@
               <li id="Current-sky">Clear</li>
             </ul>
           </div>
+
           <div class="row">
             <div class="col-6" id="temp">
-              <div class="d-flex weather-temperature">
+              <div class="clearfix weather-temperature">
                 <img src="" alt="Cloudy" id="sky" class="float-left" />
                 <span class="float-left">
                   <strong id="temperature"> </strong
                   ><span class="units"
-                    ><a href="#" id="celsius" class="active"> ℃</a> |<a
-                      href="#"
-                      id="fahrenheit"
-                      class=""
-                    >
-                      ℉°</a
-                    ></span
-                  >
+                     id="celsius" > ℃
                 </span>
               </div>
             </div>
@@ -87,6 +73,7 @@
             </div>
           </div>
         </div>
+        <div class="forecast" id="forecast"></div>
         <footer>
           <a
             href="https://github.com/Angry-cat-coder/AngryCats-weather-app"
